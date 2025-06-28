@@ -3,25 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inés Calderón</title>
+    <title>Inés Calderón | Estudiante de Administración de Negocios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <meta name="author" content="Inés Calderón Gómez">
+    <meta name="description" content="Portafolio de Inés Calderón, estudiante de Administración de Negocios y profesional de Marketing">
     <meta name="google-site-verification" content="PqiI-dORVkiTsZEjIVwomWrh_jdPS-8ijCk34-J36Jo" />
 </head>
 <body>
 
     <header class="header">
         <div class="menu container">
-            <a href="#" class="logo" >logo</a>
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="logo de Inés Calderón">
+            </a>
+
             <input type="checkbox" id="menu" />
             <label for="menu">
-                <img src="images/logo.png" class="menu-icono" alt="menu">
+                <img src="images/menu-icon.png" class="menu-icono" alt="menu">
             </label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#">Sobre mi</a></li>
-                    <li><a href="#">Estudios</a></li>
-                    <li><a href="#">Contactos</a></li>
+                    <li><a href="#sobre-mi"><i class="fas fa-user"></i> Sobre mi</a></li>
+                    <li><a href="#estudios"><i class="fas fa-graduation-cap"></i> Estudios</a></li>
+                    <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <li><a href="#compañeros"><i class="fas fa-users"></i> Compañeros</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,172 +35,195 @@
             <div class="header-text">
                 <span>Hola, soy Inés Calderón</span>
                 <h1>Estudiante de Administración de Negocios</h1>
-                <a href="#" class="btn-1">Información</a>
+                <p class="header-subtitle">Creatividad y estrategia para los negocios del futuro</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/in%C3%A9s-calder%C3%B3n-g%C3%B3mez-849206185/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="header-image">
+                <div class="image-frame">
+                    <img src="images/Perfil.jpg" alt="Inés Calderón">
+                </div>
             </div>
         </div>
     </header>
 
-    <section class="about container">
-
-        <div class="about.img">
-            <img src="images/perfil.jpg" alt="">
-        </div>
-
-        <div class="about-text">
+    <section id="sobre-mi" class="about container">
+        <div class="section-header">
             <h2>Sobre mí</h2>
-            <p>
-                Estudié la carrera de Marketing en el Instituto del Sur y actualmente estoy cursando la carrera de Administración de Empresas en la UCSP. 
-                Soy una persona apasionada por el aprendizaje continuo, me gusta leer, dibujar y diseñar. Esto me ha llevado a desarrollar como 
-                pasatiempo la creación de logotipos para marcas locales, combinando creatividad y estrategia en cada proyecto. 
-                <br>
-                <br>
-                Me considero una persona creativa, colaborativa y alegre a la que le gusta meterse en problemas.
-                Creo que retandote a ti misma es la única forma de lograr cosas increíbles. 
-            </p>
-            <div class="buttons">
-                <a href="#" class="btn-1">Estudios</a>
-                <a href="#" class="btn-1">Tecnologías</a>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-img">
+                <img src="images/Perfil.jpg" alt="Foto de perfil de Inés Calderón">
+            </div>
+
+            <div class="about-text">
+                <p>
+                    Estudié Marketing en el Instituto del Sur y actualmente estoy cursando la carrera de Administración de Negocios en la UCSP. 
+                    Soy una persona apasionada por el aprendizaje continuo, me gusta leer, dibujar y diseñar. Esto me ha llevado a desarrollar como pasatiempo 
+                    la creación de logotipos para marcas locales, combinando creatividad y estrategia en cada proyecto.
+                </p>
+                <p>
+                    Me considero una persona creativa, colaborativa y alegre a la que le gusta meterse en problemas. 
+                    Creo que retándote a ti misma es la única forma de lograr cosas increíbles.
+                </p>
+                
+                <div class="skills-section">
+                    <h3><i class="fas fa-star"></i> Habilidades</h3>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-palette"></i> Creatividad y diseño</li>
+                        <li><i class="fas fa-chart-line"></i> Estrategias de marketing</li>
+                        <li><i class="fas fa-lightbulb"></i> Resolución de problemas</li>
+                        <li><i class="fas fa-people-group"></i> Trabajo en equipo</li>
+                        <li><i class="fas fa-pencil-ruler"></i> Diseño de logotipos</li>
+                        <li><i class="fas fa-language"></i> Comunicación efectiva</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
-    
-    <main class="portfolio container">
-        <h2>Portafolio</h2>
 
-        <div class="portfolio-content">
+    <section id="estudios" class="education container">
+        <div class="section-header">
+            <h2>Información académica</h2>
+            <div class="divider"></div>
+        </div>
 
-            <div class="portfolio-1">
-                <div class="poetfolio-txt">
-                    <span> Proyecto 1</span>
-                    <h3>Página web</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nisi esse nihil dolorum fugiat quas totam facere quos officiis 
-                        saepe atque nobis hic inventore architecto ut at, consequatur 
-                        assumenda quasi tenetur.
-                    </p>
-                    <a href="#" class="btn-1">Leer más</a>
+        <div class="education-grid">
+            <div class="education-card">
+                <div class="education-logo">
+                    <img src="UCSP.png" alt="Universidad Católica San Pablo">
                 </div>
-                <div class="portfolio-img">
-                    <img src="images/Dibujo.jpg" alt="">
-                </div>
+                <h3>Administración de Negocios</h3>
+                <p class="institution">Universidad Católica San Pablo (UCSP)</p>
+                <p class="date">2023 - Actualidad</p>
+                <p class="description">Formación en gestión empresarial con enfoque en innovación y emprendimiento, por ello estoy llevando el curso de Análisis de Datos con el profesor Ernesto Cuadros.</p>
             </div>
 
-            <div class="portfolio-1">
-                <div class="portfolio-img">
-                    <img src="images/pr2.png" alt="">
+            <div class="education-card">
+                <div class="education-logo">
+                    <img src="isur.png" alt="Instituto del Sur">
                 </div>
-                <div class="poetfolio-txt">
-                    <span> Proyecto 2</span>
-                    <h3>Página web</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nisi esse nihil dolorum fugiat quas totam facere quos officiis 
-                        saepe atque nobis hic inventore architecto ut at, consequatur 
-                        assumenda quasi tenetur.
-                    </p>
-                    <a href="#" class="btn-1">Leer más</a>
-                </div>
+                <h3>Técnico en Marketing</h3>
+                <p class="institution">Instituto del Sur</p>
+                <p class="date">2018 - 2020</p>
+                <p class="description">Formación técnica para el diseño de planes de marketing estratégico y operativo.</p>
             </div>
 
-            <div class="portfolio-1">
-                <div class="poetfolio-txt">
-                    <span> Proyecto 3</span>
-                    <h3>Página web</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nisi esse nihil dolorum fugiat quas totam facere quos officiis 
-                        saepe atque nobis hic inventore architecto ut at, consequatur 
-                        assumenda quasi tenetur.
-                    </p>
-                    <a href="#" class="btn-1">Leer más</a>
+            <div class="education-card">
+                <div class="education-logo">
+                    <img src="touluse.jpg" alt="Toulouse Lautrec">
                 </div>
-                <div class="portfolio-img">
-                    <img src="images/pr3.png" alt="">
-                </div>
-            </div>
-
-             <div class="portfolio-1">
-                <div class="portfolio-img">
-                    <img src="images/pr4.png" alt="">
-                </div>
-                <div class="poetfolio-txt">
-                    <span> Proyecto 4</span>
-                    <h3>Página web</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Nisi esse nihil dolorum fugiat quas totam facere quos officiis 
-                        saepe atque nobis hic inventore architecto ut at, consequatur 
-                        assumenda quasi tenetur.
-                    </p>
-                    <a href="#" class="btn-1">Leer más</a>
-                </div>
+                <h3>Marketing digital</h3>
+                <p class="institution">Cursos especializados</p>
+                <p class="date">2020 - 2023</p>
+                <p class="description">Formación autodidacta y cursos especializados en campañas digitales en la Toulouse Lautrec.</p>
             </div>
         </div>
-    </main>
+    </section>
 
-    <section class="skills container">
+    <section id="contacto" class="contact container">
+        <div class="section-header">
+            <h2>Contacto</h2>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>ines.calderon@ejemplo.com</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/in%C3%A9s-calder%C3%B3n-g%C3%B3mez-849206185/" target="_blank">Inés Calderón Gómez</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Ubicación</h3>
+                    <p>Arequipa, Perú</p>
+                </div>
+            </div>
+            <div class="contact-img">
+                <img src="images/contacto.png" alt="Imagen de contacto">
+            </div>
+        </div>
+    </section>
 
-        <h2>Experiencia</h2>
-        <div class="skills-content">
-            <img src="images/skills.png" alt="">
-            <img src="images/skills.png" alt="">
-            <img src="images/skills.png" alt="">
-            <img src="images/skills.png" alt="">
-        </div>    
-
+    <section id="compañeros" class="compañeros container">
+        <div class="section-header">
+            <h2>Conoce a mis compañeros del curso de Análisis de Datos</h2>
+            <div class="divider"></div>
+        </div>
+        
+        <div class="compañeros-grid">
+            <div class="compañero-card">
+                <img src="https://via.placeholder.com/150" alt="Alejandro Gonzáles">
+                <h3>Alejandro Gonzáles</h3>
+                <p>ADM - Análisis de Datos</p>
+                <a href="https://alejogs14.github.io/alejandro.gonzales.sanchez/" target="_blank" class="btn">Ver perfil</a>
+            </div>
+            
+            <div class="compañero-card">
+                <img src="https://via.placeholder.com/150" alt="Carlos Mendoza">
+                <h3>Carlos Mendoza</h3>
+                <p>ADM - Análisis de Datos</p>
+                <a href="#" target="_blank" class="btn">Ver perfil</a>
+            </div>
+            
+            <div class="compañero-card">
+                <img src="https://via.placeholder.com/150" alt="Lucía Torres">
+                <h3>Lucía Torres</h3>
+                <p>ADM - Análisis de Datos</p>
+                <a href="#" target="_blank" class="btn">Ver perfil</a>
+            </div>
+            
+            <div class="compañero-card">
+                <img src="https://via.placeholder.com/150" alt="Javier Rojas">
+                <h3>Javier Rojas</h3>
+                <p>ADM - Análisis de Datos</p>
+                <a href="#" target="_blank" class="btn">Ver perfil</a>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
-
-        <div class="footer-content container">
-
-            <div class="link">
-                <h3>lorem</h3>
-                <ul>
-                    <li><a href="#">loren</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorems</a></li>
-                </ul>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Logo Inés Calderón">
+                    <p>Creatividad y estrategia para los negocios del futuro</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#sobre-mi">Sobre mí</a></li>
+                        <li><a href="#estudios">Estudios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#compañeros">Compañeros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Sígueme</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/in%C3%A9s-calder%C3%B3n-g%C3%B3mez-849206185/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
             </div>
-
-            <div class="link">
-                <h3>lorem</h3>
-                <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorems</a></li>
-                </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Inés Calderón Gómez. Todos los derechos reservados.</p>
             </div>
-
-            <div class="link">
-                <h3>lorem</h3>
-                <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorems</a></li>
-                </ul>
-            </div>
-            
-            <div class="link">
-                <h3>lorem</h3>
-                <ul>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorem</a></li>
-                    <li><a href="#">lorems</a></li>
-                </ul>
-            </div>    
         </div>
-
     </footer>
-
-
-
-
-
 </body>
 </html>
+
+
+
+
+
+
